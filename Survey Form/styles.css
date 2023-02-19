@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #f3f3f3;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container{
+    margin: 3rem auto 0 auto;
+    width: 100%;
+}
+@media screen and (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+#title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .6rem;
+}
+#description{
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+form{
+    background-color: rgba(27, 27, 50, 0.8);
+    border-radius: .6rem;
+    padding: 3rem;
+}
+.form-group{
+    margin-bottom: 2rem;
+}
+label, .form-group p{
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: .3rem;
+}
+label span{
+    font-size: 1rem;
+}
+input, select, button, textarea{
+    display: block;
+    width: 100%;
+    padding: .6rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #495057;
+}
+.input-radio input, .input-checkbox input{
+    display: inline-block;
+    width: unset;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    margin-right: .6rem;
+}
+.input-radio, .input-checkbox{
+    display: block;
+    padding: .6rem 0;
+}
+textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+button{
+    background-color: #37af65;
+    color: inherit;
+    border-radius: 2px;
+    padding: 0.75rem;
+    cursor: pointer;
+}
